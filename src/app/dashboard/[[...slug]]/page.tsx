@@ -1,11 +1,9 @@
 import React from 'react'
 
-type Props = {}
+type Props = { params: { slug: string[] } }
 
-const Page = (props: Props) => {
-  return (
-    <div>Page</div>
-  )
+const Page = ({ params }: Props) => {
+  return <div>Dashboard Page optional catch-all : {params.slug}</div>
 }
 
 export default Page
